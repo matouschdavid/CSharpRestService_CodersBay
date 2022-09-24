@@ -1,2 +1,16 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿//Variables
+
+//I/O
+
+//Collections
+
+//Methods
+
+//Classes
+
+//Conventions
+
+//Extenstionmethods
+
+//Delegates
+
