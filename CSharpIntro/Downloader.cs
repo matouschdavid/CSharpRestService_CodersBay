@@ -8,16 +8,15 @@ namespace CSharpIntro
 {
     internal class Downloader
     {
-        public delegate string OnDownloadFinishedHandler();
-        OnDownloadFinishedHandler registeredHandlers;
+        Action<string> registeredHandlers;
         public void StartDownload()
         {
             //Do something
             if (registeredHandlers != null)
-                registeredHandlers();
+                registeredHandlers("Hello");
         }
 
-        public void RegisterForDownloadFinished(OnDownloadFinishedHandler onFinished)
+        public void RegisterForDownloadFinished(Action<string> onFinished)
         {
             registeredHandlers += onFinished;
         }
